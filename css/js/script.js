@@ -1,0 +1,2 @@
+const player;
+let score;
