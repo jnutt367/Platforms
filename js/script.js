@@ -8,7 +8,7 @@ c.fillRect(100, 400, 100, 100);
 c.fillStyle = 'skyblue';
 c.fillRect(400, 100, 100, 100);
 c.fillStyle = 'rgba(444, 0, 111, 0.5)';
-c.fillRect(500, 200, 100, 100);
+c.fillRect(500, 300, 100, 100);
 c.fillStyle = 'rgba(333, 0, 222, 0.5)';
 c.fillRect(600, 700, 100, 100);
 console.log(canvas)
