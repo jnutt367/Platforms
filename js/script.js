@@ -17,7 +17,7 @@ console.log(canvas)
 
 c.beginPath();
 c.moveTo(150, 300);
-c.lineTo(300, 100);
+c.lineTo(300, 400);
 c.lineTo(400, 300);
 c.lineTo(600, 200);
 c.lineTo(300, 600);
