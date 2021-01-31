@@ -3,3 +3,7 @@ body {
     color: palevioletred;
     text-align: center;
 }
+
+canvas {
+    border: 1px solid palevioletred;
+}

@@ -1,2 +1,0 @@
-const player;
-let score;
