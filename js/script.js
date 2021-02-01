@@ -21,7 +21,7 @@ c.fillRect(250, 550, 100, 100);
 console.log(canvas)
 
 // line
-
+/*
 c.beginPath();
 c.moveTo(0, 0);
 c.lineTo(500, 500);
@@ -29,4 +29,4 @@ c.lineTo(1000, 0);
 c.lineTo(1100, 200);
 c.lineTo(0, 100);
 c.strokeStyle = "green";
-c.stroke();
+c.stroke();  */
