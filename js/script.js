@@ -30,3 +30,9 @@ c.lineTo(1100, 200);
 c.lineTo(0, 100);
 c.strokeStyle = "green";
 c.stroke();  */
+
+// Arc / Circle
+c.beginPath();
+c.arc(300, 300, 30, 0, Math.PI * 2, false);
+c.strokeStyle = "#fa34a3";
+c.stroke();
