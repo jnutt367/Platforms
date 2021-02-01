@@ -1,17 +1,28 @@
-body {
-    margin: 0;
-    background-color: turquoise;
-    color: palevioletred;
-    text-align: center;
-}
-
-header {
-    margin: 0;
-    height: 100%;
-    background-image: radial-gradient(#333, #123456, #222);
-}
-
-canvas {
-    text-align: center;
-    border: 1px solid black;
-}
+    body {
+        margin: 0;
+        background-color: turquoise;
+        color: palevioletred;
+        text-align: center;
+    }
+    
+    header {
+        margin: 0;
+        height: 100%;
+        background-image: radial-gradient(#333, #123456, #222);
+    }
+    
+    canvas {
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    footer {
+        height: 300px;
+        color: rgb(197, 15, 15);
+        font-size: 20px;
+        padding: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-image: url('../images/bubbles-purple-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
