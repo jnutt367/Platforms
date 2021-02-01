@@ -56,7 +56,7 @@ function animate() {
     c.strokeStyle = 'green';
     c.stroke();
 
-    if (x + radius > innerWidth) {
+    if (x + radius > innerWidth || x - radius < 0) {
         dx = -dx;
     }
     x += dx;
