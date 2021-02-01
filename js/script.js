@@ -13,7 +13,7 @@ c.fillStyle = 'rgba(333, 0, 222, 0.5)';
 c.fillRect(600, 700, 100, 100);
 c.fillStyle = 'rgba(535, 333, 444, 0.5)';
 c.fillRect(400, 800, 100, 100);
-//c.fillStyle = 'rgba(333, 0, 222, 0.5)';
+c.fillStyle = 'rgba(333, 0, 222, 0.5)';
 c.fillRect(100, 100, 50, 50);
 
 console.log(canvas)
@@ -24,7 +24,7 @@ c.beginPath();
 c.moveTo(0, 0);
 c.lineTo(500, 500);
 c.lineTo(1000, 0);
-//c.lineTo(600, 200);
-//c.lineTo(300, 600);
+c.lineTo(1100, 200);
+c.lineTo(0, 100);
 c.strokeStyle = "green";
 c.stroke();
