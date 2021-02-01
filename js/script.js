@@ -15,6 +15,8 @@ c.fillStyle = 'rgba(535, 333, 444, 0.5)';
 c.fillRect(400, 800, 100, 100);
 c.fillStyle = 'rgba(333, 0, 222, 0.5)';
 c.fillRect(100, 100, 50, 50);
+c.fillStyle = 'rgba(333, 111, 222, 0.5)';
+c.fillRect(250, 550, 100, 100);
 
 console.log(canvas)
 
