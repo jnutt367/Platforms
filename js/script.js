@@ -37,7 +37,7 @@ c.stroke();  */
 //c.strokeStyle = "#fa34a3";
 //c.stroke();
 
-for (var i = 0; i < 8; i++) {
+for (var i = 0; i < 300; i++) {
     var x = Math.random() * window.innerWidth;
     var y = Math.random() * window.innerHeight;
     c.beginPath();
