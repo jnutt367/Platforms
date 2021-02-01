@@ -36,3 +36,10 @@ c.beginPath();
 c.arc(300, 300, 30, 0, Math.PI * 2, false);
 c.strokeStyle = "#fa34a3";
 c.stroke();
+
+for (var i = 0; i < 8; i++) {
+    c.beginPath();
+    c.arc(300, 300, 30, 0, Math.PI * 2, false);
+    c.strokeStyle = "blue";
+    c.stroke();
+}
