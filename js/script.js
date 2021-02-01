@@ -11,6 +11,11 @@ c.fillStyle = 'rgba(444, 0, 111, 0.5)';
 c.fillRect(500, 300, 150, 150);
 c.fillStyle = 'rgba(333, 0, 222, 0.5)';
 c.fillRect(600, 700, 100, 100);
+c.fillStyle = 'rgba(535, 333, 444, 0.5)';
+c.fillRect(400, 800, 100, 100);
+//c.fillStyle = 'rgba(333, 0, 222, 0.5)';
+c.fillRect(100, 100, 50, 50);
+
 console.log(canvas)
 
 // line
