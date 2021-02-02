@@ -26,3 +26,11 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
+    h2 {
+        color: orangered;
+    }
+    
+    h3 {
+        color: black;
+    }
