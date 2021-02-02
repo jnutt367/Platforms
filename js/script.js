@@ -43,20 +43,37 @@ var c = canvas.getContext('2d');
 //  c.stroke();
 // }
 
-function Circle(x, y) {
+function Circle(x, y, dx, dy, radius) {
     this.x = x;
     this.y = y;
-
+    this.dx = dx;
+    this.dy = dy;
+    this.radius = radius;
     this.draw = function() {
         c.beginPath();
-        c.arc(x, y, radius, 0, Math.PI * 2, false);
+        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         c.strokeStyle = 'black';
         c.stroke();
     }
+
+    this.update = function() {
+        if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+            this.dx = -this.dx;
+        }
+        if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+            this.dy = -this.dy;
+        }
+
+        this.x += this.dx;
+        this.y += this.dy;
+
+        this.draw();
+    }
 }
 
-var circle = new Circle(200, 200);
-circle.draw();
+
+var circle = new Circle(200, 200, 3, 3, 30);
+
 
 var x = Math.random() * innerWidth;
 var y = Math.random() * innerHeight;
@@ -68,23 +85,13 @@ function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, innerWidth, innerHeight);
 
-    circle.draw();
+    circle.update();
 
 
     c.beginPath();
     c.arc(x, y, radius, 0, Math.PI * 2, false);
     c.strokeStyle = 'black';
     c.stroke();
-
-    if (x + radius > innerWidth || x - radius < 0) {
-        dx = -dx;
-    }
-    if (y + radius > innerHeight || y - radius < 0) {
-        dy = -dy;
-    }
-
-    x += dx;
-    y += dy;
-
 }
+
 animate();
