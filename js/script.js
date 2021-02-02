@@ -43,11 +43,11 @@ var c = canvas.getContext('2d');
 //  c.stroke();
 // }
 
-var x = 200;
-var y = 200;
+var x = Math.random() * innerWidth;
+var y = Math.random() * innerHeight;
 var dx = 5;
 var dy = 5;
-var radius = 200;
+var radius = 100;
 
 function animate() {
     requestAnimationFrame(animate);
@@ -55,7 +55,7 @@ function animate() {
 
     c.beginPath();
     c.arc(x, y, radius, 0, Math.PI * 2, false);
-    c.strokeStyle = 'green';
+    c.strokeStyle = 'black';
     c.stroke();
 
     if (x + radius > innerWidth || x - radius < 0) {
