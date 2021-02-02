@@ -45,8 +45,8 @@ var c = canvas.getContext('2d');
 
 var x = Math.random() * innerWidth;
 var y = Math.random() * innerHeight;
-var dx = 5;
-var dy = 5;
+var dx = (Math.random() - 0.5) * 20;
+var dy = (Math.random() - 0.5) * 20;
 var radius = 100;
 
 function animate() {
