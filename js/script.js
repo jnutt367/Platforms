@@ -43,6 +43,21 @@ var c = canvas.getContext('2d');
 //  c.stroke();
 // }
 
+function Circle(x, y) {
+    this.x = x;
+    this.y = y;
+
+    this.draw = function() {
+        c.beginPath();
+        c.arc(x, y, radius, 0, Math.PI * 2, false);
+        c.strokeStyle = 'black';
+        c.stroke();
+    }
+}
+
+var circle = new Circle(200, 200);
+circle.draw();
+
 var x = Math.random() * innerWidth;
 var y = Math.random() * innerHeight;
 var dx = (Math.random() - 0.5) * 20;
@@ -52,6 +67,9 @@ var radius = 100;
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, innerWidth, innerHeight);
+
+    circle.draw();
+
 
     c.beginPath();
     c.arc(x, y, radius, 0, Math.PI * 2, false);
