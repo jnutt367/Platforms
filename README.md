@@ -1,2 +1,2 @@
 # Platforms
-A platform game ...Maybe I can make it about Software development and all the different learning platforms lol.
+A walk through learning what HTML5 Canvas can draw and animate. Oh Lordy!
