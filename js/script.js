@@ -56,7 +56,7 @@ function Circle(x, y, dx, dy, radius) {
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         c.strokeStyle = 'red';
         c.stroke();
-        c.fillStyle = 'skyblue'
+        c.fillStyle = 'black'
         c.fill();
     }
 
