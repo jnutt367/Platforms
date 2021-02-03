@@ -43,6 +43,8 @@ var c = canvas.getContext('2d');
 //  c.stroke();
 // }
 
+
+
 function Circle(x, y, dx, dy, radius) {
     this.x = x;
     this.y = y;
@@ -72,26 +74,29 @@ function Circle(x, y, dx, dy, radius) {
 }
 
 
-var circle = new Circle(200, 200, 3, 3, 30);
+var circleArray = [];
+
+for (var i = 0; i < 100; i++) {
+    var x = Math.random() * innerWidth;
+    var y = Math.random() * innerHeight;
+    var dx = (Math.random() - 0.5) * 20;
+    var dy = (Math.random() - 0.5) * 20;
+    var radius = 100;
+    circleArray.push(new Circle(x, y, dx, dy, radius));
+}
 
 
-var x = Math.random() * innerWidth;
-var y = Math.random() * innerHeight;
-var dx = (Math.random() - 0.5) * 20;
-var dy = (Math.random() - 0.5) * 20;
-var radius = 100;
+console.log(circleArray)
+console.table(circleArray)
 
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, innerWidth, innerHeight);
 
-    circle.update();
+    for (var i = 0; i < circleArray.length; i++) {
+        circleArray[i].update();
+    }
 
-
-    c.beginPath();
-    c.arc(x, y, radius, 0, Math.PI * 2, false);
-    c.strokeStyle = 'silver';
-    c.stroke();
 }
 
 animate();
